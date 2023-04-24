@@ -1,1 +1,10 @@
 # spaGCN-project
+
+SpaGCN is lacking well-defined user interface and example data that would enable its easy usage and integration into the existing spatial transcriptomics analysis. For this project the following steps should be implemented:
+
+1) Read the SpaGCN paper and get an insight into its methodology and results. Prepare a short presentation explaining it. (5 points)
+2) Study the [tutorials](https://github.com/jianhuupenn/SpaGCN/tree/master/tutorial) provided by the author and run them successfully with the data provided in them. Create a Python script with the command-line interface (argparse Python module) through which the users could easily access all functionalities and modes in the tutorials. The input spatial transcriptomics data should be in .h5ad files and read with [scanpy](https://scanpy.readthedocs.io/en/stable/generated/scanpy.read.html) read function. The tool should be runnable with or without the microscopic image of the tissue. Save the results into the output .h5ad file and image (.png) with the plot of the obtained clusters across spatial coordinates using “scanpy.pl.spatial” function. 
+Fork the SpaGCN repository and after the work is done create the pull request to integrate this script together with its documentation into the main SpaGCN repository. (15 points)
+3) Download and process 2 stereo-seq files ([E9.5_E1S1.MOSTA.h5ad and one slide of Dorsal_midbrain_cell_bin.h5ad](https://db.cngb.org/stomics/mosta/download/)) with SpaGCN and create the examples in the documentation (Readme.md on Github) explaining steps for running these samples.
+Create a requirements.txt document that lists all necessary requirements for running the algorithm. If 3 persons are working on this project the docker image with the cloned SpaGCN repository and all necessary dependencies should be created, tested and stored on DockerHub. (10 points)
+4) Create a PowerPoint (Google Slides) presentation explaining all the work being done and a video presentation publicly available on Youtube. Perform code versioning on the Github repository and provide the link to it.  (10 points)
